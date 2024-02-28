@@ -8,7 +8,7 @@ type BlogPostsProps = {
   posts: BlogPost[];
 };
 
-export default function BlogPosts({ posts }: BlogPostsProps) {
+const BlogPosts = ({ posts }: BlogPostsProps) => {
   return (
     <div id="blog-posts">
       <h1>Blog Posts</h1>
@@ -22,4 +22,6 @@ export default function BlogPosts({ posts }: BlogPostsProps) {
       </ul>
     </div>
   );
-}
+};
+
+export default BlogPosts;
